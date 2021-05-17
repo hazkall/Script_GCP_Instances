@@ -34,7 +34,7 @@ function getGCPCompute {
 
 if getGCPCompute;[ $instances -gt $n ]; then
 
-    echo "Iniciando criação de $(($instances -$n)) instancia[s]"
+    echo "Creating $(($instances -$n)) instance[s]"
     for i in `seq $((instances-n))`;do
         
         gcloud beta compute \
